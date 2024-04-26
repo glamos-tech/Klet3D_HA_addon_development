@@ -1,0 +1,23 @@
+name: "GLAMOS Klet3D"
+version: "1.0.112"
+slug: "glamos_klet3d"
+description: "Create building floorplans and visualize them in 3D"
+url: "https://klet3d.com/"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+startup: services
+ingress: true
+map:
+  - share:rw
+options:
+  floorplanID: null
+  licenseKey: null
+schema:
+  floorplanID: str
+  licenseKey: str
+  token: password
