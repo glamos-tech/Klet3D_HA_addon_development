@@ -1,5 +1,5 @@
 name: "GLAMOS Klet3D"
-version: "1.0.121"
+version: "1.0.122"
 slug: "glamos_klet3d"
 description: "Create building floorplans and visualize them in 3D"
 url: "https://klet3d.com/"
@@ -22,3 +22,4 @@ schema:
   licenseKey: str
   token: password
 panel_icon: mdi:alpha-k-box-outline
+panel_admin: false
