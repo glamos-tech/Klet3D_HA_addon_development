@@ -111,7 +111,9 @@
         element.setAttribute(isStyle ? "href" : "src", sourcePath);
       }
       independentSourcePaths.forEach((sourcePath) => loadSource(sourcePath));
-      envDependentSourcePaths.forEach((sourcePath) => loadSource(sourcePath))
+      loadSource("env-config.js", () =>
+        envDependentSourcePaths.forEach((sourcePath) => loadSource(sourcePath))
+      );
     </script>
   </head>
   <body>
